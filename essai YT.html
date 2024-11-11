@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conférence de Femmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 315px;
+            display: none;
+        }
+        .video-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .video-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="video-container">
+        <iframe id="youtubeVideo" src="Assets/h.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button onclick="toggleVideo()" id="videoButton">Lancer la vidéo</button>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            var iframe = document.getElementById("youtubeVideo");
+            var button = document.getElementById("videoButton");
+
+            if (iframe.style.display === "none") {
+                iframe.style.display = "block";
+                iframe.src += "?autoplay=1";
+                button.textContent = "Fermer la lecture";
+            } else {
+                iframe.style.display = "none";
+                stopVideo(iframe);
+                button.textContent = "Lancer la vidéo";
+            }
+        }
+
+        // Function to stop the video
+        function stopVideo(iframe) {
+            var src = iframe.src.split("?")[0];
+            iframe.src = src;  // Stop the video by resetting the src
+        }
+
+        // Add event listener for clicks outside the video
+        document.addEventListener('click', function(event) {
+            var videoContainer = document.querySelector('.video-container');
+            var iframe = document.getElementById("youtubeVideo");
+            var button = document.getElementById("videoButton");
+
+            if (!videoContainer.contains(event.target)) {
+                iframe.style.display = "none";
+                stopVideo(iframe);
+                button.textContent = "Lancer la vidéo";
+            }
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conférence de Femmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .schedule {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .schedule h2 {
+            text-align: center;
+            color: #333;
+        }
+        .schedule-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .schedule-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+        .schedule-item h3 {
+            margin: 0;
+            color: #4CAF50;
+        }
+        .schedule-item p {
+            margin: 5px 0 0 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Conférence de Femmes</div>
+        <div>
+            <a href="#about">À propos</a>
+            <a href="#speakers">Intervenantes</a>
+            <a href="#schedule">Programme</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="schedule" class="schedule">
+        <h2>Programme de la Conférence</h2>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/registration.png" alt="Inscription">
+            <div>
+                <h3>8h30 - Accueil et Inscription</h3>
+                <p>Arrivée des participantes et enregistrement. Un petit-déjeuner léger sera servi.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/microphone.png" alt="Discours">
+            <div>
+                <h3>9h00 - Discours d'Ouverture</h3>
+                <p>Présentation par l'hôte de la conférence et discours de bienvenue.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/teamwork.png" alt="Leadership">
+            <div>
+                <h3>9h30 - Session 1: Leadership Féminin</h3>
+                <p>Discussion sur les défis et opportunités pour les femmes leaders, avec des intervenantes invitées.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/coffee-to-go.png" alt="Pause Café">
+            <div>
+                <h3>10h30 - Pause Café</h3>
+                <p>Moment de réseautage autour d'une boisson chaude et de collations.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/startup.png" alt="Entrepreneuriat">
+            <div>
+                <h3>11h00 - Session 2: Entrepreneuriat et Innovation</h3>
+                <p>Présentation de projets innovants menés par des femmes entrepreneurs.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/restaurant.png" alt="Déjeuner">
+            <div>
+                <h3>12h30 - Déjeuner</h3>
+                <p>Pause déjeuner avec buffet varié et opportunités de réseautage.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/workshop.png" alt="Atelier">
+            <div>
+                <h3>14h00 - Atelier: Développement Personnel</h3>
+                <p>Atelier interactif sur les compétences en développement personnel et professionnel.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/conference.png" alt="Table Ronde">
+            <div>
+                <h3>15h30 - Table Ronde: Équilibre Vie Pro-Vie Perso</h3>
+                <p>Table ronde avec des expertes discutant des stratégies pour équilibrer vie professionnelle et personnelle.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/summary-list.png" alt="Discours de Clôture">
+            <div>
+                <h3>17h00 - Discours de Clôture</h3>
+                <p>Résumé de la journée et remerciements de la part de l'équipe organisatrice.</p>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <img src="https://img.icons8.com/color/48/000000/cocktail-party.png" alt="Cocktail">
+            <div>
+                <h3>17h30 - Cocktail de Fin de Journée</h3>
+                <p>Moment convivial pour discuter des expériences de la journée autour d'un cocktail.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
