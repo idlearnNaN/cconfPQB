@@ -1,3 +1,38 @@
+/* styles.css */
+
+body, html { margin: 0; padding: 0; height: 100%; width: 100%; font-family: Arial, sans-serif; }
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
 .slider-container {
     position: relative;
     width: 100%;
@@ -33,7 +68,7 @@
   
   /* Section "À propos" */
 .about-section {
-    background-color: #f9f9f9;
+    background-color: #e9e9e9;
     padding: 50px 0;
     color: #333;
   }
@@ -48,7 +83,7 @@
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
-    color: #4a90e2; /* Couleur pour titre */
+    color: #65e2e6; /* Couleur pour titre */
   }
   
   .about-section .intro {
@@ -78,7 +113,7 @@
   .about-section h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #4a90e2;
+    color: #65e2e6;
   }
   
   .about-section p {
@@ -320,20 +355,33 @@
 }
 
 .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #dd0f80;
-            padding: 10px;
-            border: #000000, 5px;
-        }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f90a6f;
+  padding: 10px;
+  border-bottom: 5px solid #ffffff; /* Correction de la bordure */
+  position: sticky; /* Utilisation de sticky pour meilleure réactivité */
+  top: 0; /* Positionner la navbar en haut */
+  z-index: 1000; /* S'assurer que la navbar reste au-dessus des autres éléments */
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Disposition en colonne pour les petits écrans */
+  }
+}
+
         .navbar a {
             color: white;
             text-decoration: none;
             padding: 14px 20px;
         }
         .navbar a:hover {
-            background-color: #ddd;
+            background-color: #713684
+            #713684
+;
             color: black;
         }
         .navbar .logo {
@@ -344,9 +392,48 @@
             background-color: #4CAF50;
             color: white;
             border: none;
-            padding: 10px 20px;
+            
             cursor: pointer;
         }
         .navbar .participer-btn:hover {
-            background-color: #45a049;
+            background-color: #65e2e6;
         }
+        
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

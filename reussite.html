@@ -3,24 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conférence de Femmes</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Diaporama</title>
+    <link rel="stylesheet" href="reussite.css">
     <style>
         body {
             font-family: Arial, sans-serif;
         }
         
-        .navbar {
-            background-color: #4CAF50;
-            padding: 10px;
-            color: white;
-            text-align: center;
-            position: fixed; /* Ajoutez cette ligne */
-            top: 0;
-            width: 100%; /* Assurez-vous que la navbar prend toute la largeur */
-            z-index: 1000; /* Ajoutez un index z pour qu'elle reste au-dessus des autres éléments */
-        }
-
+        
 
         .navbar a {
             color: white;
@@ -28,18 +18,19 @@
             padding: 14px 20px;
         }
         .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #713684
+            ;
+            color: rgb(255, 255, 255);
         }
         .navbar .logo {
             font-size: 24px;
             font-weight: bold;
         }
         .navbar .participer-btn {
-            background-color: #4CAF50;
+            background-color: #65e2e6;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 14.5px 20px;
             cursor: pointer;
         }
         .navbar .participer-btn:hover {
@@ -69,44 +60,43 @@
             background-color: #45a049;
         }
     </style>
-    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo" style="height: 50px;">
             <img src="Assets/logo PQB.jpg" alt="" style="height: 100%; width: 100% ; border-radius: 50%;">
         </div>
-        <div>
-            <a href="#about">À propos</a>
-            <a href="#speakers">Intervenantes</a>
+        <div style="margin-left: -300px;">
+            <a href="reussite.html#about">À propos</a>
+            <a href="reussite.html#speakers ">Intervenant(e)s</a>
             <a href="Programme.html">Programme</a>
-            <a href="#footer">Contact</a>
+            <a href="reussite.html#footer">Contact</a>
             <button class="participer-btn">Participer</button>
         </div>
     </nav>
-
-    <div class="slider-container">
-        <div class="slider">
-          <div class="slide">
-            <img src="Assets/1.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="Assets/2.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="Assets/3.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="Assets/4.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="Assets/5.jpg" alt="">
-          </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Assets/1.jpg" style="width:100% ; height: 550px;">
         </div>
-      </div>
+        <div class="mySlides fade">
+            <img src="Assets/2.jpg" style="width:100% ; height: 550px;">
+        </div>
+        <div class="mySlides fade">
+            <img src="Assets/3.jpg" style="width:100% ; height: 550px;">
+        </div>
+        <div class="mySlides fade">
+            <img src="Assets/4.jpg" style="width:100% ; height: 550px;">
+        </div>
+        <div class="mySlides fade">
+            <img src="Assets/5.jpg" style="width:100% ; height: 550px;">
+        </div>
+    </div>
 
-      <section id="about" class="about-section">
+    <section id="about" class="about-section">
         <div class="container">
+          <div class="noname">
+            <img src="Assets/plusqbelle.png" style="width:600px ; height: 200px; margin-left: 300px;">
+        </div>
           <h2>À propos de la Conférence</h2>
           <p class="intro">Rejoignez-nous pour un événement unique dédié à l'autonomisation des femmes, à l'inspiration et à l'innovation. Cette conférence rassemble des leaders, des professionnelles et des militantes passionnées par l'égalité des genres et l'avancement des droits des femmes.</p>
           
@@ -130,11 +120,13 @@
             <div class="highlights">
               <h3>Ce que vous allez découvrir</h3>
               <ul>
-                <li><strong>Ateliers interactifs</strong> sur le leadership, l'entrepreneuriat et la gestion du stress.</li>
-                <li><strong>Conférences inspirantes</strong> de femmes leaders dans divers domaines.</li>
-                <li><strong>Opportunités de réseautage</strong> pour renforcer les liens professionnels et personnels.</li>
-                <li><strong>Discussions ouvertes</strong> sur les défis contemporains auxquels les femmes sont confrontées.</li>
-                <li><strong>Un environnement inclusif et solidaire</strong> pour encourager la participation active de toutes les voix.</li>
+                <li><strong>CONFÉRENCE INSPIRANTE : </strong>Conférence inspirante abordant la beauté intérieure et extérieure, avec des discussions et des conseils pratiques pour équilibrer le bien-être physique et émotionnel.</li>
+                <li><strong>ATELIER SUR LA BEAUTÉ EXTÉRIEURE :</strong> Atelier pratique mettant en avant des astuces de soin de la peau, de maquillage et de style personnel pour valoriser l'apparence extérieure.</li>
+                <li><strong>ATELIER SUR LA BEAUTÉ INTÉRIEURE :</strong> Atelier introspectif explorant le développement personnel, la confiance en soi et le bien-être émotionnel pour cultiver une beauté intérieure authentique et durable.</li>
+                <li><strong>TALK SHOW :</strong> Talk show dynamique avec des invités spéciaux et des discussions stimulantes sur des sujets variés et pertinents, favorisant l'interaction avec le public.</li>
+                <li><strong>OPPORTUNITÉ DE RÉSEAUTAGE :</strong> Séances de réseautage pour créer des connexions professionnelles et personnelles solides, partager des idées et découvrir de nouvelles opportunités.</li>
+                <li><strong>EXPOSITION VENTE :</strong> Exposition vente présentant une sélection de produits artisanaux, de créations uniques et de marques locales, offrant une expérience de shopping enrichissante et diversifiée.</li>
+
               </ul>
             </div>
           </div>
@@ -150,7 +142,7 @@
           </div>
         </div>
       </section>
-      
+
       <section id="speakers" class="speakers-section">
         <div class="container">
           <h1>PLUS QUE BELLE - CONFERENCE</h1>
@@ -220,130 +212,54 @@
               </div>
           </div>
         </div>
-      </section>
-      <!--
-      <section id="schedule" class="schedule">
-        <h2>Programme de la Conférence</h2>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/registration.png" alt="Inscription">
-            <div>
-                <h3>8h30 - Accueil et Inscription</h3>
-                <p>Arrivée des participantes et enregistrement. Un petit-déjeuner léger sera servi.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/microphone.png" alt="Discours">
-            <div>
-                <h3>9h00 - Discours d'Ouverture</h3>
-                <p>Présentation par l'hôte de la conférence et discours de bienvenue.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/teamwork.png" alt="Leadership">
-            <div>
-                <h3>9h30 - Session 1: Leadership Féminin</h3>
-                <p>Discussion sur les défis et opportunités pour les femmes leaders, avec des intervenantes invitées.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/coffee-to-go.png" alt="Pause Café">
-            <div>
-                <h3>10h30 - Pause Café</h3>
-                <p>Moment de réseautage autour d'une boisson chaude et de collations.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/startup.png" alt="Entrepreneuriat">
-            <div>
-                <h3>11h00 - Session 2: Entrepreneuriat et Innovation</h3>
-                <p>Présentation de projets innovants menés par des femmes entrepreneurs.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/restaurant.png" alt="Déjeuner">
-            <div>
-                <h3>12h30 - Déjeuner</h3>
-                <p>Pause déjeuner avec buffet varié et opportunités de réseautage.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/workshop.png" alt="Atelier">
-            <div>
-                <h3>14h00 - Atelier: Développement Personnel</h3>
-                <p>Atelier interactif sur les compétences en développement personnel et professionnel.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/conference.png" alt="Table Ronde">
-            <div>
-                <h3>15h30 - Table Ronde: Équilibre Vie Pro-Vie Perso</h3>
-                <p>Table ronde avec des expertes discutant des stratégies pour équilibrer vie professionnelle et personnelle.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/summary-list.png" alt="Discours de Clôture">
-            <div>
-                <h3>17h00 - Discours de Clôture</h3>
-                <p>Résumé de la journée et remerciements de la part de l'équipe organisatrice.</p>
-            </div>
-        </div>
-        <div class="schedule-item">
-            <img src="https://img.icons8.com/color/48/000000/cocktail-party.png" alt="Cocktail">
-            <div>
-                <h3>17h30 - Cocktail de Fin de Journée</h3>
-                <p>Moment convivial pour discuter des expériences de la journée autour d'un cocktail.</p>
-            </div>
-        </div>
-    </section> -->
-    
+    </section>
     <footer id="footer" style="background-color: #713684; color: white; padding: 20px 0;">
-    <div style="max-width: 1200px; margin: auto; padding: 0 20px; display: flexbox; ">
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-            <!-- Newsletter -->
-            <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-left: 65px;">
-                <h3>Abonnez-vous à notre Newsletter</h3>
-                <form id="newsletter-form">
-                    <input type="email" placeholder="Votre email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-                    <button type="submit" style="width: 100%; padding: 10px; background-color: #45a049; border: none; color: white; cursor: pointer; margin-left: 12px; border-radius: 20px;">S'abonner</button>
-                </form>
-            </div>
-            <!-- Social Media Links -->
-            <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-left: 175px; margin-right: 175px;">
-                <h3>Suivez-nous</h3>
-                <div>
-                    <a href="https://www.facebook.com" style="margin-right: 10px;">
-                        <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
-                    </a>
-                    <a href="https://www.twitter.com" style="margin-right: 10px;">
-                        <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter">
-                    </a>
-                    <a href="https://www.instagram.com" style="margin-right: 10px;">
-                        <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.linkedin.com">
-                        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
-                    </a>
+        <div style="max-width: 1200px; margin: auto; padding: 0 20px; display: flexbox; ">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <!-- Newsletter -->
+                <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-left: 65px;">
+                    <h3>Abonnez-vous à notre Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Votre email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                        <button type="submit" style="width: 100%; padding: 10px; background-color: #45a049; border: none; color: white; cursor: pointer; margin-left: 12px; border-radius: 20px;">S'abonner</button>
+                    </form>
+                </div>
+                <!-- Social Media Links -->
+                <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-left: 175px; margin-right: 175px;">
+                    <h3>Suivez-nous</h3>
+                    <div>
+                        <a href="https://www.facebook.com" style="margin-right: 10px;">
+                            <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.twitter.com" style="margin-right: 10px;">
+                            <img src="https://img.icons8.com/color/48/000000/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com" style="margin-right: 10px;">
+                            <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com">
+                            <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                <!-- Useful Links -->
+                <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
+                    <h3>Liens Utiles</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#about" style="color: white;">À propos</a></li>
+                        <li><a href="#speakers" style="color: white;">Intervenantes</a></li>
+                        <li><a href="Programme.html" style="color: white;">Programme</a></li>
+                        <li><a href="#contact" style="color: white;">Contact</a></li>
+                        <li><a href="#terms" style="color: white;">Conditions d'utilisation</a></li>
+                        <li><a href="#privacy" style="color: white;">Politique de confidentialité</a></li>
+                    </ul>
                 </div>
             </div>
-            <!-- Useful Links -->
-            <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
-                <h3>Liens Utiles</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li><a href="#about" style="color: white;">À propos</a></li>
-                    <li><a href="#speakers" style="color: white;">Intervenantes</a></li>
-                    <li><a href="Programme.html" style="color: white;">Programme</a></li>
-                    <li><a href="#contact" style="color: white;">Contact</a></li>
-                    <li><a href="#terms" style="color: white;">Conditions d'utilisation</a></li>
-                    <li><a href="#privacy" style="color: white;">Politique de confidentialité</a></li>
-                </ul>
+            <div style="text-align: center; border-top: 1px solid #45a049; padding-top: 10px; margin-top: 20px;">
+                <p>&copy; 2024 Conférence de Femmes. Tous droits réservés.</p>
             </div>
         </div>
-        <div style="text-align: center; border-top: 1px solid #45a049; padding-top: 10px; margin-top: 20px;">
-            <p>&copy; 2024 Conférence de Femmes. Tous droits réservés.</p>
-        </div>
-    </div>
-</footer>
-
-    
+    </footer>
+    <script src="reussite.js"></script>
 </body>
 </html>
